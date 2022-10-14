@@ -1,4 +1,4 @@
-package example.micronaut
+package pl.mt.hello
 
 import jakarta.inject.Singleton
 

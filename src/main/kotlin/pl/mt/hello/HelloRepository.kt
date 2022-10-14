@@ -1,4 +1,4 @@
-package example.micronaut
+package pl.mt.hello
 
 import io.micronaut.context.annotation.DefaultImplementation
 import javax.validation.constraints.NotBlank

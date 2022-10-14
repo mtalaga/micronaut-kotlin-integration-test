@@ -1,4 +1,4 @@
-package example.micronaut
+package pl.mt.hello
 
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import jakarta.inject.Inject

@@ -57,7 +57,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("example.*")
+        annotations("pl.mt.*")
     }
 }
 

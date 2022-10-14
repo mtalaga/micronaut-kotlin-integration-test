@@ -1,4 +1,4 @@
-package example.micronaut
+package pl.mt.hello
 
 import io.micronaut.context.annotation.Replaces
 import io.micronaut.context.annotation.Requires

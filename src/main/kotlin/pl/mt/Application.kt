@@ -1,4 +1,4 @@
-package example
+package pl.mt
 
 import io.micronaut.runtime.Micronaut.run
 
