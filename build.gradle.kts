@@ -15,6 +15,7 @@ repositories {
 
 val kotlinVersion = project.properties["kotlinVersion"]
 val micronautSerdeVersion = project.properties["micronautSerdeVersion"]
+ val testContainersVersion = project.properties["testContainersVersion"]
 
 dependencies {
     kapt("io.micronaut:micronaut-http-validation")
@@ -31,6 +32,9 @@ dependencies {
 
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
 
+    testImplementation("org.testcontainers:testcontainers:${testContainersVersion}")
+    testImplementation("org.testcontainers:mongodb:${testContainersVersion}")
+    testImplementation("org.testcontainers:junit-jupiter:${testContainersVersion}")
 }
 
 
