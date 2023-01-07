@@ -9,6 +9,7 @@ pluginManagement {
         id("org.jetbrains.kotlin.kapt") version kotlinVersion
         id("org.jetbrains.kotlin.plugin.allopen") version kotlinVersion
         id("io.micronaut.application") version micronautPluginVersion
+        id("io.micronaut.test-resources") version micronautPluginVersion
         id("com.github.johnrengelman.shadow") version "7.1.2"
     }
 }
