@@ -11,7 +11,7 @@ import org.bson.codecs.pojo.annotations.BsonCreator
 import org.bson.codecs.pojo.annotations.BsonProperty
 
 @Singleton
-class HelloRepositoryMongo(mongoClient: MongoClient): HelloRepository {
+class HelloRepositoryMongo(mongoClient: MongoClient) : HelloRepository {
 
     private val collection: MongoCollection<Hello>
 
@@ -32,5 +32,6 @@ class HelloRepositoryMongo(mongoClient: MongoClient): HelloRepository {
 @Introspected
 @Serdeable
 data class Hello @Creator @BsonCreator constructor(
-    @field:BsonProperty("language") @param:BsonProperty("language") val language:String,
-    @field:BsonProperty("pl/mt/hello") @param:BsonProperty("pl/mt/hello") val hello: String)
+    @field:BsonProperty("language") @param:BsonProperty("language") val language: String,
+    @field:BsonProperty("hello") @param:BsonProperty("hello") val hello: String
+)
