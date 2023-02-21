@@ -16,8 +16,8 @@ class HelloRepositoryMongo(mongoClient: MongoClient) : HelloRepository {
     private val collection: MongoCollection<Hello>
 
     init {
-        val db = mongoClient.getDatabase("pl/mt/hello")
-        collection = db.getCollection("pl/mt/hello", Hello::class.java)
+        val db = mongoClient.getDatabase("hello")
+        collection = db.getCollection("hello", Hello::class.java)
     }
 
     override fun findHelloByLanguage(language: String): String? {
